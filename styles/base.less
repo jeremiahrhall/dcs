@@ -54,6 +54,10 @@ atom-text-editor, :host {
   .selection .region {
     background-color: @syntax-selection-color;
   }
+
+  .cursor-line {
+    background-color: @cursor-line;
+  }
 }
 
 atom-text-editor .search-results .marker .region,
@@ -523,3 +527,10 @@ atom-text-editor[mini] .scroll-view,
 }
 
 /* java stuff */
+
+/* ruby stuff */
+.source.ruby {
+  .symbol {
+    color: @def-instance-field;
+  }
+}
